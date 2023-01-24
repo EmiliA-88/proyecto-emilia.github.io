@@ -1,0 +1,214 @@
+#profile-pic img{
+    border-radius: 30%;
+    width: 100px;
+}
+body{
+    background-color:black;
+}
+h4,
+ul{
+    color: antiquewhite;
+}
+
+/*-------------------------REFERENCIAS-----------------------*/
+.fotos-icono img{
+    border-radius: 50%;
+
+}
+h1,
+h2,
+h3,
+h4,
+p{
+    font-family: 'Roboto', sans-serif;
+    color: antiquewhite;
+}
+/*------------------------------LAYAUT----------------------*/
+.main-container{
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+ }
+
+/* -------reglas generales-----------------------------------------------------------------------------------------*/
+ul {
+    list-style-type: none; 
+}
+/*las listas no tienen puntos*/
+
+
+/*--------------ASIDE (El panel lateral iz)-------------------------------------------------------------*/
+
+#profile-pic img{
+    border-radius: 50%;
+}
+aside{
+    background-color: #6B7357;
+    width: 30%;
+    margin-right: 3%;
+    color: aliceblue;
+}
+
+aside h2{
+    letter-spacing: 3px;
+}
+
+/* aside section h2:first-child{border-bottom: 2px solid whitesmoke;}
+"El primer hijo h2, que está dentro de un section,que está dentro de un aside." 
+Con el nth-child le especificas puntualmente cual h2 queres q modifique.
+Por ej nth-child(6)
+
+{border-bottom: 2px solid whitesmoke;}
+[2PX=GROSOR DEL BORDE
+COLOR DEL BORDE
+TÍPO DE LINEA}*/
+
+aside section h2:first-child{
+    border-bottom: 2px solid whitesmoke;
+}
+
+/*--------Mine (menu?)--------------------------------------------------------------------*/
+h1,
+h2{
+    text-transform: uppercase;
+}
+/*los hijos directos de h2 (los nietos no)
+ solo modifica los sectins q estén dentro de <main>*/
+
+main section > h2{                          
+text-transform: uppercase;
+letter-spacing: 5px;
+}
+
+.hero{
+    background-color: #022413;
+    box-shadow: 3px 3px 30px 5px #6B7357 inset;
+    padding: 15% 0;
+    text-align: center;
+}
+.hero h2{
+    color: aliceblue;
+    border-top: 2px solid whitesmoke;
+    /*para q no me modifique el "Lead softwre enginnier"*/ 
+    letter-spacing: 10px;
+}
+.hero h1{
+    letter-spacing: 10px;
+
+}
+
+.about-me h2{
+    background-color: black;
+    color: antiquewhite;
+}
+.about-me p{
+    line-height:2em;
+    background: hwb(148 0% 89% / 0.712);
+    padding: 5px;
+}
+
+
+article h3, 
+article h4 {
+font-weight: bold;
+}
+
+article ul{
+    list-style-type:square ;
+}
+
+/*-----------------REFERENCES---------------------------------*/
+.references{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #6B7357;
+}
+.references article{
+    width: 50%;
+    text-align: center;
+}
+
+/*-------------DT------------------------*/
+dt,
+dd{
+    line-height: 1.5em; 
+    border-top: 1px solid whitesmoke;
+}
+dt{
+    clear: left;
+    width: 30%;
+    float: left;
+    font-weight: bolder;
+    
+}
+
+dd{
+    clear: right;
+    width: 50%;
+    float: left;
+    margin: 0;
+   
+}
+dt:last-of-type,
+dd:last-of-type{
+    border-bottom: 1px solid whitesmoke;
+
+}
+
+/*------------------iCONS----------------------------*/
+/*.fa-brands fa-facebook{
+    content: "\f39e";
+    font-family: Font Awesome 5 Free;
+    font-weight: 900;
+}*/
+.fb::before{
+    content: "\f39e";
+    font-family: Font Awesome 5 Free;
+    font-weight: 900;
+}
+.social-item::before{
+    padding-right: 15px;
+
+}
+
+
+.ig::before{
+    content: "\f39e";
+    font-family: Font Awesome 5 Free;
+    font-weight: 900;
+}
+.social-item::before{
+    padding-right: 15px;
+
+}
+
+.tw::before{
+    content: "\f39e";
+    font-family: Font Awesome 5 Free;
+    font-weight: 900;
+}
+.social-item::before{
+    padding-right: 15px;
+
+}
+
+.li::before{
+    content: "\f39e";
+    font-family: Font Awesome 5 Free;
+    font-weight: 900;
+}
+.social-item::before{
+    padding-right: 15px;
+
+}
+
+/*----------------------------Barritas medidoras de porcentaje------------------------------*/
+meter{
+    display: block;
+    width: 80%;
+}
+meter::-webkit-meter-optimum-value{
+    background: none;
+    background-color: darkslategray;
+}
+
